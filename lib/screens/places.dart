@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:my_favorite_places/screens/add_place.dart';
+import 'package:my_favorite_places/widgets/places_list.dart';
 
-class PlacesList extends StatelessWidget {
-  const PlacesList({super.key});
+class PlacesScreen extends StatelessWidget {
+  const PlacesScreen({super.key});
 
   void _navigateNewPlace(BuildContext context) {
-    Navigator.push(context, MaterialPageRoute(builder: (ctx) => NewPlace()));
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (ctx) => AddPlaceScreen()),
+    );
   }
 
   @override
@@ -23,6 +27,7 @@ class PlacesList extends StatelessWidget {
         ],
       ),
       backgroundColor: Theme.of(context).colorScheme.onSecondary,
+      body: PlacesList(places: []),
     );
   }
 }

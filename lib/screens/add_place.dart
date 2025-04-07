@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class NewPlace extends StatelessWidget {
-  const NewPlace({super.key});
+class AddPlaceScreen extends StatelessWidget {
+  const AddPlaceScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('New Place')),
+      appBar: AppBar(title: Text('Add Place')),
       body: Form(
         child: Column(
           children: [
