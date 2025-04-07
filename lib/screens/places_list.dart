@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:my_favorite_places/screens/new_place.dart';
+import 'package:my_favorite_places/screens/add_place.dart';
 
-class PlaceList extends StatelessWidget {
-  const PlaceList({super.key});
+class PlacesList extends StatelessWidget {
+  const PlacesList({super.key});
 
   void _navigateNewPlace(BuildContext context) {
     Navigator.push(context, MaterialPageRoute(builder: (ctx) => NewPlace()));
