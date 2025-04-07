@@ -5,6 +5,9 @@ class PlaceList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: Text('Your Places')));
+    return Scaffold(
+      appBar: AppBar(title: Text('Your Places')),
+      backgroundColor: Theme.of(context).colorScheme.onSecondary,
+    );
   }
 }
