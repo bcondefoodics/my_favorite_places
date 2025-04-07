@@ -27,10 +27,11 @@ class _AddPlaceScreenState extends State<AddPlaceScreen> {
             TextField(
               decoration: InputDecoration(label: Text('Title')),
               controller: _titleController,
+              style: TextStyle(color: Theme.of(context).colorScheme.onSurface),
             ),
             SizedBox(height: 16),
             ElevatedButton.icon(
-              icon: Icon(Icons.send),
+              icon: Icon(Icons.add),
               onPressed: () {},
               label: Text('Add Place'),
             ),
