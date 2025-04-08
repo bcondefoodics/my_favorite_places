@@ -25,6 +25,9 @@ class PlacesList extends StatelessWidget {
       itemCount: places.length,
       itemBuilder:
           (ctx, index) => ListTile(
+            leading: CircleAvatar(
+              backgroundImage: FileImage(places[index].imagePicked),
+            ),
             title: Text(
               places[index].name,
               style: Theme.of(context).textTheme.titleMedium!.copyWith(
